@@ -1,0 +1,140 @@
+body{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	position: absolute;
+	background-color: linear-gradient(to right, #ffa751, #ffe259);
+	background: linear-gradient(to right, #ffa751, #ffe259);
+	color:white;
+}
+a:visited{
+	color: black;
+	text-decoration: none;
+}
+a:focus{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: #304352;
+}
+
+header a {
+	color: white;
+}
+header a:visited {
+	color: white;
+}
+header a:focus {
+	color: white;
+}
+header a:hover {
+	color: white;
+}
+
+
+.nav-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width:100%;
+	height:100px;
+}
+
+#sect-one{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 800px;
+}
+
+.sect-one-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding:30px;
+	width: 50%;
+	height: 740px;
+	background: linear-gradient(to right, #434343, #ff070b);
+}
+
+.sect-one-left div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding:30px;
+	width: 50%;
+	height: 740px;
+}
+
+.sect-one-right{
+	background-image: url(./images/wedding.JPG);
+	background-repeat: no-repeat;
+	overflow-y: hidden;
+	height: 800px;
+	width: 50%;	
+}
+
+.dev{
+	position: relative;
+	animation-name:dev ;
+	animation-duration: 3s;
+	animation-delay:0s;
+}
+.school{
+	position: relative;
+	animation-name:school ;
+	animation-duration: 3s;
+	/*animation-delay:1s;*/
+}
+.camp{
+	position: relative;
+	animation-name:camp ;
+	animation-duration: 3s;
+	/*animation-delay:2s;*/
+}
+.future{
+	position: relative;
+	animation-name:future;
+	animation-duration: 3s;
+	/*animation-delay:3s;*/
+}
+
+#sect-two{
+	height: 800px;
+	background-color: green;
+}
+
+#sect-three{
+	height: 800px;
+	background-color: blue;
+}
+
+
+#sect-four{
+	height: 800px;
+	background-color: red;
+}
+
+#sect-five{
+	height: 800px;
+	background-color: pink;
+}
+
+

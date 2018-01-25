@@ -2,9 +2,78 @@
 <html>
 <head>
 	<title>Marvin's Resume</title>
+	<link rel="stylesheet" type="text/css" href="Css.css">
+	<link rel="stylesheet" type="text/css" href="css-animations.css">
+	<link rel="stylesheet" type="text/css" href="hover.css">
+
 </head>
 <body>
-<h1> Natalia Manzano and Marvin Filus</h1>
-<h2> 01-18-2018</h2>
+	<header>
+		<nav class="nav-header">
+			<a href="#sect-one" class="hvr-grow">Intro</a>
+			<a href="#sect-two" class="hvr-grow"> Exprience</a>
+			<a href="#sect-three" class="hvr-grow">Tic Tac Toe</a>
+			<a href="#sect-four" class="hvr-grow"> Projects </a>
+			<a href="#sect-five" class="hvr-grow"> Contact </a>
+		</nav>
+	</header>
+	<section id="sect-one">
+		<div class="sect-one-left">
+			<h2 class="dev list"> Web Developer </h2>
+			<h2 class="school list"> Valencia College Student </h2>
+			<h2 class="camp list"> Iron Yard Graduate </h2>
+			<h2 class="future list"> Future Free Lancer </h2>
+		</div>
+		<div class="sect-one-right">
+			
+		</div>
+	</section>
+	<section id="sect-two">
+		<div class="sect-">
+			
+		</div>
+	</section>
+
+	<section id="sect-three">
+		<div class="sect-">
+			
+		</div>
+	</section>
+
+	<section id="sect-four">
+		<div class="sect-">
+			
+		</div>
+	</section>
+
+	<section id="sect-five">
+		<div class="sect-">
+			
+		</div>
+	</section>
+
+	<!-- The scroll down arrow -->
+	<div class="center">
+		<div class="arrow"></div>
+	</div>
+
+
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBNraG5iNN2zrA0B48j4Kya9d0eN1GZH3k",
+    authDomain: "my-resume-b32ea.firebaseapp.com",
+    databaseURL: "https://my-resume-b32ea.firebaseio.com",
+    projectId: "my-resume-b32ea",
+    storageBucket: "my-resume-b32ea.appspot.com",
+    messagingSenderId: "710682049492"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </body>
 </html>

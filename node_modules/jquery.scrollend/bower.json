@@ -1,0 +1,25 @@
+{
+	"name": "jquery.scrollend",
+	"version": "0.1.1",
+	"homepage": "https://nielse63.github.io/jquery.scrollend/",
+	"description": "A jQuery plugin that allows for window scroll-start event handling.",
+	"main": "dist/jquery.scrollend.js",
+	"keywords": [
+		"jquery-plugin",
+		"scrollend",
+		"jQuery",
+		"events",
+		"scroll"
+	],
+	"authors": [
+		"Erik Nielsen <erik@312development.com>"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
