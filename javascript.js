@@ -50,21 +50,21 @@ $(window).scroll(function () {
 $(document).ready(setTimeout(function(){
 	$('.dev').show();	
 	console.log('ran')
-},3000));
+},2000));
 
 $(document).ready(setTimeout(function(){
 	$('.school').show();
 	console.log('ran')
-},4500));
+},3000));
 
 $(document).ready(setTimeout(function(){
 	$('.camp').show();	
 	console.log('ran')
-},6000));
+},4000));
 $(document).ready(setTimeout(function(){
 	
 	$('.future').show();	
 	console.log('ran')
-},7500));
+},5000));
 
 

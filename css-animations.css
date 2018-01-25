@@ -6,17 +6,18 @@
 	transform: translate(-50%, -50%);
 	width: 0px;
 	height: 160px;
-	border-left: 6px dashed darkgrey;
+	/*border-left: 6px dashed darkgrey;*/
 }
 
 .arrow{
 	position: fixed;
-	top:0px;
+	top:-0px;
 	left:-6px;
 	height: 40px;
 	width: 6px;
 	background: black;
-	animation:animate 2s infinite ;
+	opacity: 0;
+	animation:animate 2s ;
 }
 
 .arrow:before{
@@ -34,21 +35,21 @@
 @keyframes animate {
 	0%{
 		transform: translateY(0px);
-		opacity: 0.5;
+		opacity: 0.1;
 	}
 	50%{
-		transform: translateY(80px);
+		transform: translateY(150px);
 		opacity: 1;
 	}
 	100%{
-		transform: translateY(160px);
-		opacity: 0.5;
+		transform: translateY(300px);
+		opacity: 0.1;
 	}
 }
 
 @keyframes dev {
 	0% {
-		left:-50%;
+		left:-75%;
 	}
 	100% {
 		left:0px;
@@ -57,7 +58,7 @@
 
 @keyframes school {
 	0% {
-		left:-50%;
+		left:-75%;
 	}
 	100% {
 		left:0px;
@@ -66,7 +67,7 @@
 
 @keyframes camp {
 	0% {
-		left:-50%;
+		left:-75%;
 	}
 	100% {
 		left:0px;
@@ -75,7 +76,7 @@
 
 @keyframes future {
 	0% {
-		left:-50%;
+		left:-75%;
 	}
 	100% {
 		left:0px;

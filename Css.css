@@ -70,7 +70,12 @@ header a:hover {
 	padding:30px;
 	width: 50%;
 	height: 740px;
-	background: linear-gradient(to right, #434343, #ff070b);
+	background: linear-gradient(to right, #434343, #2c3e50);
+}
+
+.list{
+	width:100%;
+	height: 100%;
 }
 
 .sect-one-left div{
@@ -79,16 +84,28 @@ header a:hover {
 	justify-content: space-between;
 	align-items: center;
 	padding:30px;
-	width: 50%;
+	width: 100%;
 	height: 740px;
+	-webkit-text-stroke: 1.0px #000000;
+	-webkit-text-fill-color: #FFFFFF;
+	font-size: 20px;
 }
 
 .sect-one-right{
+	display: flex;
+	align-items: center;
 	background-image: url(./images/wedding.JPG);
 	background-repeat: no-repeat;
 	overflow-y: hidden;
 	height: 800px;
 	width: 50%;	
+}
+
+.mission{
+	font-size: 30px;
+	line-height: 200%;
+	-webkit-text-stroke: 1.0px #000000;
+	-webkit-text-fill-color: #FFFFFF;
 }
 
 .dev{
@@ -136,5 +153,7 @@ header a:hover {
 	height: 800px;
 	background-color: pink;
 }
+
+
 
 
