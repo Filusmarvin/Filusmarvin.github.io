@@ -84,7 +84,7 @@ header a:hover {
 	justify-content: space-between;
 	align-items: center;
 	padding:30px;
-	width: 100%;
+	width: 100a%;
 	height: 740px;
 	-webkit-text-stroke: 1.0px #000000;
 	-webkit-text-fill-color: #FFFFFF;
@@ -135,7 +135,16 @@ header a:hover {
 
 #sect-two{
 	height: 800px;
-	background-color: green;
+	background: linear-gradient(to right, #bbd2c5,#536976);
+}
+
+#experience{
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+	font-size: 30px;
+	-webkit-text-stroke: 1.0px #000000;
+	-webkit-text-fill-color: #FFFFFF;
 }
 
 #sect-three{

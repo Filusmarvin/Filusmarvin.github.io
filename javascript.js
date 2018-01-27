@@ -54,17 +54,20 @@ $(document).ready(setTimeout(function(){
 
 $(document).ready(setTimeout(function(){
 	$('.school').show();
-	console.log('ran')
+	console.log('ran');
 },3000));
 
 $(document).ready(setTimeout(function(){
 	$('.camp').show();	
-	console.log('ran')
+	console.log('ran');
 },4000));
 $(document).ready(setTimeout(function(){
 	
 	$('.future').show();	
-	console.log('ran')
+	console.log('ran');
 },5000));
 
+$(document).ready(setInterval(function () {
+	// alert('hello world');
+},3000))
 
