@@ -49,25 +49,45 @@ $(window).scroll(function () {
 
 $(document).ready(setTimeout(function(){
 	$('.dev').show();	
-	console.log('ran')
 },2000));
 
 $(document).ready(setTimeout(function(){
 	$('.school').show();
-	console.log('ran');
 },3000));
 
 $(document).ready(setTimeout(function(){
 	$('.camp').show();	
-	console.log('ran');
 },4000));
 $(document).ready(setTimeout(function(){
 	
 	$('.future').show();	
-	console.log('ran');
 },5000));
 
-$(document).ready(setInterval(function () {
-	// alert('hello world');
-},3000))
+var num = 1;
 
+$(document).ready(setInterval(function () {
+	console.log(num)
+
+	switch(num){
+	case 1:
+		$('.back1').attr('class','back2');
+		num++;
+		break;
+	case 2:
+		$('.back2').attr('class','back3');
+		num++;
+		break;
+	case 3:
+		$('.back3').attr('class','back4');
+		num++;
+		break;
+	case 4:
+		$('.back4').attr('class','back1');
+		num = 1;
+		break;
+	}
+},4000))
+
+$(window).ready(function(){
+	
+})

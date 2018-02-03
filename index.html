@@ -3,16 +3,18 @@
 <head>
 	<title>Marvin's Resume</title>
 	<link rel="stylesheet" type="text/css" href="Css.css">
+	<link rel="stylesheet" type="text/css" href="experience.css">
+	<link rel="stylesheet" type="text/css" href="tic-tac-toe.css">
 	<link rel="stylesheet" type="text/css" href="css-animations.css">
 	<link rel="stylesheet" type="text/css" href="hover.css">
 
 </head>
 <body>
-	<header>
+	<header class="back1">
 		<nav class="nav-header">
 			<a href="#sect-one" class="hvr-grow">Intro</a>
-			<a href="#sect-two" class="hvr-grow"> Exprience</a>
-			<a href="#sect-three" class="hvr-grow">Tic Tac Toe</a>
+			<a href="#sect-two" class="hvr-grow"> Experience</a>
+			<a href="#tic-tac-toe" class="hvr-grow">Tic Tac Toe</a>
 			<a href="#sect-four" class="hvr-grow"> Projects </a>
 			<a href="#sect-five" class="hvr-grow"> Contact </a>
 		</nav>
@@ -39,28 +41,15 @@
 	<section id="sect-two">
 		<div class="sect-">
 			<h1 id="experience"> Experience </h1>
-			<div>
-				<h2>Iron Yard Academy</h2>
-				<h3> Skills learned at the Iron Yard Academy</h3>
-				<p> HTML5</p>
-				<p> CSS3</p>
-				<p> Javascript</p>
-				<p> JQuery</p>
-				<p> Node</p>
-				<p> Github/Git</p>
-				<p> React </p>
-				<p> Redux </p>
-				<p> AJAX</p>
-				<p> OOP</p>
-				<p> Express</p>
-				<p> Mongo</p>
-				<p> Debugging </p>
-			</div>
-			<div>
+			<div class="git-repo">
 				<h2> Git Repositories </h2>
-				<a href="https://github.com/Filusmarvin /react-tac-toe"> <img src="./images/"/></a>
-				<a href="https://github.com/Filusmarvin ?tab=repositories"> View More</a>
+				<div class="git-examples">
+					<a class="repo-img" href=""> <div class="redux gitpics"> </div> </a>
+					<a class="repo-img" href=""> <div class="React-tac-toe gitpics" > </div> </a>
+					<a class="repo-img" href=""> <div class="Datenight gitpics" > </div> </a>
+				</div>
 			</div>
+
 		</div>
 	</section>
 
@@ -76,9 +65,50 @@
 		</div>
 	</section>
 
-	<section id="sect-five">
-		<div class="sect-">
-			
+	<section id="tic-tac-toe">
+		<header class="tic-header">
+			<form class="sign-in" onsubmit="logIn(event)">
+				<h3> Sign in to keep track of your record and score. </h3>
+				<p> Email </p>
+				<input class="username email1" type="text" name="username" />
+				<p> Password </p>
+				<input class="password" type="password" name="password" />
+				<button> Submit </button>	
+				<p class="hvr-grow" onclick="signUp(event)"> Click here to log in for the first time </p>		
+			</form>
+			<form class="sign-up" onsubmit="createUser(event)">
+				<h3> Sign up by entering your email and creating a password </h3>
+				<p> Email </p>
+				<input type="text" name="email" class="username email2" />
+				<p>Create your password</p>
+				<input type="password" name="password" class="password pass2" />
+				<p> Enter in your password again </p>
+				<input type="password" name="password" class="password pass3" />
+				<button> Submit </button>
+				<p> The passwords you entered did not match or is not 8 characters in length </p>
+			</form>
+			<div class="signedIn">
+				<p> Please enter your name </p>
+				<input class="name1" type="text" name="name" />
+				<p> Hello <span class="name2"></span></p>
+			</div>
+		</header>
+		<div class="tic-container">
+			<div class="row row1">
+				<div class="box box1"></div>
+				<div class="box box2"></div>
+				<div class="box box3"></div>
+			</div>
+			<div class="row row2">
+				<div class="box box4"></div>
+				<div class="box box5"></div>
+				<div class="box box6"></div>
+			</div>
+			<div class="row row3">
+				<div class="box box7"></div>
+				<div class="box box8"></div>
+				<div class="box box9"></div>
+			</div>
 		</div>
 	</section>
 
@@ -91,19 +121,9 @@
 
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="javascript.js"></script>
+	<script type="text/javascript" src="tic-tac-toe.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBNraG5iNN2zrA0B48j4Kya9d0eN1GZH3k",
-    authDomain: "my-resume-b32ea.firebaseapp.com",
-    databaseURL: "https://my-resume-b32ea.firebaseio.com",
-    projectId: "my-resume-b32ea",
-    storageBucket: "my-resume-b32ea.appspot.com",
-    messagingSenderId: "710682049492"
-  };
-  firebase.initializeApp(config);
-</script>
+	<script type="text/javascript" scr="firebase.js"></script>
 
 </body>
 </html>

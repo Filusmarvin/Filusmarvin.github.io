@@ -1,0 +1,54 @@
+.git-repo{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.git-repo h2{
+	width: 1000px !important;
+}
+
+.git-examples{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.gitpics{
+	width: 400px;
+	height: 400px;
+	box-shadow: 1px 1px 1px 1px grey;
+	margin:15px;
+}
+.gitpics:hover{
+	width: 500px;
+	height: 500px;
+	background-size: 500px 500px;
+	transition: all 2s;
+}
+
+.redux{
+	background-image: url("./images/Reduxtagram.png");
+	background-size: 400px 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.React-tac-toe{
+	background-image: url("./images/React-tac-toe.png");
+	background-size: 400px 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.Datenight{
+	background-image: url("./images/Someone-to-love.png");
+	background-size: 400px 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}

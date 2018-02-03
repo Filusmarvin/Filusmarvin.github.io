@@ -1,0 +1,86 @@
+.tic-header{
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.sign-in{
+	display: flex;
+	align-self: left;
+	flex-direction: column;
+	margin-left: 30px;
+	height: 200px;
+	color: black;
+}
+
+.sign-in button{
+	width: 100px;
+	margin-top: 10px;
+}
+.username{
+	border: 0px;
+	border-bottom: 1px solid black;
+	background-color: inherit;
+	width: 150px;
+	transition: all 2s;
+}
+
+.username:focus{
+	outline: none;
+	width: 300px;
+	font-size: 20px;
+	transition: all 2s;
+}
+
+.password{
+	border: 0px;
+	border-bottom: 1px solid black;
+	background-color: inherit;
+	width: 150px;
+	transition: all 2s;
+}
+
+.password:focus{
+	outline: none;
+	width: 300px;
+	font-size: 20px;
+	transition: all 2s;
+}
+
+.sign-up{
+	display: none;
+	align-self: left;
+	flex-direction: column;
+	margin-left: 30px;
+	height: 200px;
+	color: black;
+}
+
+.signedIn{
+	display: flex;
+	flex-direction: column;
+}
+
+#tic-tac-toe{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.tic-container{
+	border: 3px solid black;
+	width: 602px;
+	height: 602px;
+	display: flex;
+	flex-direction: row;
+}
+
+.box{
+	border: 1px solid black;
+	width:200px;
+	height: 200px;
+}

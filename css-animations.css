@@ -21,7 +21,7 @@
 }
 
 .arrow:before{
-	content:"";
+	content:""; 
 	position: fixed;
 	bottom:0px;
 	left:-10px;
