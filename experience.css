@@ -1,3 +1,7 @@
+#sect-two p {
+	margin:0px;
+	padding:0px;
+	}
 .git-repo{
 	width: 100%;
 	display: flex;
@@ -51,4 +55,147 @@
 	background-size: 400px 400px;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.years{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	justify-content: space-between;
+
+}
+
+.year{
+	margin-bottom: 0px;
+}
+
+.skills{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+
+.skills div{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.skillList{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.skillList p {
+	margin:0px;
+}
+
+.html{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:200px;
+	margin:0px;
+	width: 30px;
+}
+
+.reactSkill{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:90px;
+	margin:0px;
+	width: 30px;
+}
+
+.word{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:50px;
+	margin:0px;
+	width: 30px;
+}
+
+.gitAni{
+	position: relative;
+	animation-name: slideUno;
+	animation-duration: 3s;
+}
+
+.css3{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:200px;
+	margin:0px;
+	width: 30px;
+}
+.js{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:180px;
+	margin:0px;
+	width: 30px;
+}
+
+.jquery{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:180px;
+	margin:0px;
+	width: 30px;
+}
+.node{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:75px;
+	margin:0px;
+	width: 30px;
+}
+.oop{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:75px;
+	margin:0px;
+	width: 30px;
+}
+.ajax{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:90px;
+	margin:0px;
+	width: 30px;
+}
+.test{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:90px;
+	margin:0px;
+	width: 30px;
+}
+.github{
+	border:1px solid grey;
+	border-radius: 5px;
+	background-color: grey;
+	height:90px;
+	margin:0px;
+	width: 30px;
+}
+
+.upDown1{
+	animation-name: upDown1;
+	animation-duration: 5s;
+}
+
+.upDown2{
+	animation-name: upDown2;
+	animation-duration: 5s;
 }

@@ -82,3 +82,50 @@
 		left:0px;
 	}
 }
+
+@keyframes slideUno {
+	0% {
+		left: 800px;
+		top:60px;
+	}
+	100% {
+		left:0px;
+		top:0px;
+	}
+}
+
+@keyframes upDown1 {
+	0% {
+		height: 0px;
+	}
+	25% {
+		height: 100px;
+	}
+	50%{
+		height: 50px;
+	}
+	75%{
+		height: 275px;
+	}
+	100%{
+
+	}
+}
+
+@keyframes upDown2 {
+	0% {
+		height: 100px;
+	}
+	25% {
+		height: 0px;
+	}
+	50%{
+		height: 275px;
+	}
+	75%{
+		height: 50px;
+	}
+	100%{
+
+	}
+}

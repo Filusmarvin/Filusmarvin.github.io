@@ -1,7 +1,11 @@
+#tic-tac-toe{
+	background: linear-gradient(to right, #434343, #2c3e50);
+}
+
 .tic-header{
 	width: 100%;
 	height: 400px;
-	background-color: grey;
+	background: linear-gradient(to right, #434343, #2c3e50);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

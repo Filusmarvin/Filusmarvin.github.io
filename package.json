@@ -1,0 +1,24 @@
+{
+  "name": "filusmarvin.github.io",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery.scrollend": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Filusmarvin/Filusmarvin.github.io.git"
+  },
+  "author": "Marvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Filusmarvin/Filusmarvin.github.io/issues"
+  },
+  "homepage": "https://github.com/Filusmarvin/Filusmarvin.github.io#readme"
+}

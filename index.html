@@ -10,7 +10,7 @@
 
 </head>
 <body>
-	<header class="back1">
+	<header class="back1" id="header">
 		<nav class="nav-header">
 			<a href="#sect-one" class="hvr-grow">Intro</a>
 			<a href="#sect-two" class="hvr-grow"> Experience</a>
@@ -28,7 +28,7 @@
 				<h2 class="school"> Valencia College Student </h2>
 			</div>
 			<div class="list">
-				<h2 class="camp"> Iron Yard Graduate </h2>
+				<h2 class="camp"> Iron Yard Academy Graduate </h2>
 			</div>
 			<div class="list">
 				<h2 class="future"> Future Free Lancer </h2>
@@ -49,11 +49,66 @@
 					<a class="repo-img" href=""> <div class="Datenight gitpics" > </div> </a>
 				</div>
 			</div>
-
+			<div>
+				<h2> Skills learned at the Iron Yard Academy </h2>
+				<div class="skills">
+					<div class="years">
+						<p>3</p>
+						<p>2</p>
+						<p>1</p>
+						<p class="year">Years</p>
+					</div>
+					<div class="skillList">
+						<p class="html skill1"></p>
+						<p>HTML5</p>
+					</div>
+					<div class="skillList">
+						<p class="css3 skill2"></p>
+						<p>CSS3</p>
+					</div>
+					<div class="skillList">
+						<p class="js skill1"></p>
+						<p>Javascript</p>
+					</div>
+					<div class="skillList">
+						<p class="jquery skill2"></p>
+						<p>JQuery</p>
+					</div>
+					<div class="skillList">
+						<p class="node skill1"></p>
+						<p>Node</p>
+					</div>
+					<div class="skillList">
+						<p class="oop skill2"></p>
+						<p>OOP</p>
+					</div>
+					<div class="skillList">
+						<p class="ajax skill1"></p>
+						<p>AJAX</p>
+					</div>
+					<div class="skillList">
+						<p class="test skill2"></p>
+						<p>Test/Debug</p>
+					</div>
+					<div class="skillList">
+						<p class="github skill1"></p>
+						<p>Git/Github</p>
+					</div>
+					<div class="skillList">
+						<p class="reactSkill skill2"></p>
+						<p>React/Redux</p>
+					</div>
+					<div class="skillList">
+						<p class="word skill1"></p>
+						<p>Wordpress</p>
+					</div>
+				</div>
+				<p> The Iron Yard Academy was a 12-week extensive and concentrated boot camp in which I learned a series of skills. We were sent home every night to with projects and a series of applications that we had to build and submit the next day. Every morning we had certain javascript functions in which we had to solve and figure out and create functions to answer the problem that would be in real job situations. Then we would spend the day learning a certain skill or code and also having to learn how to scour the internet to find extra resources to complete the homework assigment assigned to us. Ultimately the Iron Yard Academy did not only teach us how to code but gave me also the ability to learn different skills in a short period of time and to become independent with multiple skills. To see more work done at the Iron Yard Academy and apps that I built, you can visit <a href="https://github.com/Filusmarvin" class="hvr-grow" style="color:red">My Github Account </a>. </p>
+			</div>
 		</div>
 	</section>
 
-	<section id="sect-three">
+	<!-- <section id="sect-three">
 		<div class="sect-">
 			
 		</div>
@@ -63,7 +118,7 @@
 		<div class="sect-">
 			
 		</div>
-	</section>
+	</section> -->
 
 	<section id="tic-tac-toe">
 		<header class="tic-header">
@@ -90,24 +145,25 @@
 			<div class="signedIn">
 				<p> Please enter your name </p>
 				<input class="name1" type="text" name="name" />
+				<button class="subName"> Submit </button>
 				<p> Hello <span class="name2"></span></p>
 			</div>
 		</header>
 		<div class="tic-container">
 			<div class="row row1">
-				<div class="box box1"></div>
-				<div class="box box2"></div>
-				<div class="box box3"></div>
+				<div class="box box1" value="1"></div>
+				<div class="box box4" value="4"></div>
+				<div class="box box7" value="7"></div>
 			</div>
 			<div class="row row2">
-				<div class="box box4"></div>
-				<div class="box box5"></div>
-				<div class="box box6"></div>
+				<div class="box box2" value="2"></div>
+				<div class="box box5" value="5"></div>
+				<div class="box box8" value="8"></div>
 			</div>
 			<div class="row row3">
-				<div class="box box7"></div>
-				<div class="box box8"></div>
-				<div class="box box9"></div>
+				<div class="box box3" value="3"></div>
+				<div class="box box6" value="6"></div>
+				<div class="box box9" value="9"></div>
 			</div>
 		</div>
 	</section>
@@ -117,13 +173,26 @@
 		<div class="arrow"></div>
 	</div>
 
+	<!-- <img class="random" src="" /> -->
+
 
 
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="javascript.js"></script>
 	<script type="text/javascript" src="tic-tac-toe.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-	<script type="text/javascript" scr="firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBNraG5iNN2zrA0B48j4Kya9d0eN1GZH3k",
+	    authDomain: "my-resume-b32ea.firebaseapp.com",
+	    databaseURL: "https://my-resume-b32ea.firebaseio.com",
+	    projectId: "my-resume-b32ea",
+	    storageBucket: "my-resume-b32ea.appspot.com",
+	    messagingSenderId: "710682049492"
+	  };
+  firebase.initializeApp(config);
+</script>
 
 </body>
 </html>

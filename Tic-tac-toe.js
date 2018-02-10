@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	firebase.auth().onAuthStateChanged(function(user) {
+		name(user);
 	  if (user) {
 	    // User is signed in.
 	    $('.sign-in').hide();
@@ -11,14 +12,11 @@ $(document).ready(function(){
 	    console.log('no user');
 	  }
 	});
-	if (user.name) {
-		$('.name1').hide();
-		$('.name2').show();
-	} else{
-		$('.name2').hide();
-		$('.name1').show();
-	}
 })
+
+function name(user) {
+	console.log(user)
+}
 
 function createUser(event){
 	event.preventDefault();
@@ -39,6 +37,14 @@ function createUser(event){
 		null;
 	}
 }
+
+// Add your name to firebase.
+$('.subName').on('click',function writeUserData() {
+	let username = $('.name1').val();
+  firebase.database().ref('users/' + 'uZw5zN5YM7SyTu0yCPq5CnU8otv2').set({
+    name: username
+  });
+})
 
 
 
@@ -61,3 +67,8 @@ function signUp(event){
 	$('.sign-in').hide();
 	$('.sign-up').show();
 }
+
+$('.tic-container').on('click',function (e) {
+	let click = e.target.value;
+	console.log(click)
+})
