@@ -18,9 +18,11 @@
 .git-examples{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
+	height: 600px;
+	width: 100%;
 }
 
 .gitpics{
@@ -36,11 +38,17 @@
 	transition: all 2s;
 }
 
+
 .redux{
 	background-image: url("./images/Reduxtagram.png");
 	background-size: 400px 400px;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.redux-splur{
+	width: 500px;
+	font-size: 20px;
 }
 
 .React-tac-toe{
@@ -62,6 +70,7 @@
 	flex-direction: column;
 	height: 300px;
 	justify-content: space-between;
+	font-size: 20px;
 
 }
 
@@ -118,9 +127,15 @@
 	width: 30px;
 }
 
-.gitAni{
+.gitAni1{
 	position: relative;
 	animation-name: slideUno;
+	animation-duration: 3s;
+}
+
+.gitAni2{
+	position: relative;
+	animation-name: slideDos;
 	animation-duration: 3s;
 }
 

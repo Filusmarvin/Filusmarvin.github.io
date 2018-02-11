@@ -47,6 +47,21 @@
 	}
 }
 
+@keyframes dwnArrow {
+	0%{
+		/*transform: translateY(0px);*/
+		opacity: 0.1;
+	}
+	50%{
+		/*transform: translateY(50px);*/
+		opacity: 1;
+	}
+	100%{
+		/*transform: translateY(100px);*/
+		opacity: 0.1;
+	}
+}
+
 @keyframes dev {
 	0% {
 		left:-75%;
@@ -87,6 +102,17 @@
 	0% {
 		left: 800px;
 		top:60px;
+	}
+	100% {
+		left:0px;
+		top:0px;
+	}
+}
+
+@keyframes slideDos {
+	0% {
+		left: -800px;
+		top:-60px;
 	}
 	100% {
 		left:0px;

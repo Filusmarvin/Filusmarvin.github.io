@@ -84,16 +84,21 @@ $(window).scroll(function () {
 })
 // animation for the experience section
 $(window).scroll(function () {
-	if (pageYOffset>1500) {
-		$('.repo-img').show();
-		$('.repo-img').addClass('gitAni');
+	if (pageYOffset>1200) {
+		$('.repo-img-uno').show();
+		$('.repo-img-uno').addClass('gitAni1');
 	} 
-	if (pageYOffset< 1000) {
-		$('.repo-img').hide();
+	if (pageYOffset>1900) {
+		$('.repo-img-dos').show();
+		$('.repo-img-dos').addClass('gitAni2');
+	}
+	if (pageYOffset< 800) {
+		$('.repo-img-uno').hide();
+		$('.repo-img-dos').hide();
 	}
 
 	//animation for the skills bars
-	if (pageYOffset> 2175) {
+	if (pageYOffset> 2075) {
 		$('.skill1').addClass('upDown1');
 		$('.skill2').addClass('upDown2');
 	}
