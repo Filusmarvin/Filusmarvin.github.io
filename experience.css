@@ -25,6 +25,10 @@
 	width: 100%;
 }
 
+.ex2{
+	background-color: lightgrey;
+}
+
 .gitpics{
 	width: 400px;
 	height: 400px;
@@ -46,7 +50,14 @@
 	background-repeat: no-repeat;
 }
 
-.redux-splur{
+.git-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*height: 600px;*/
+}
+
+.splur{
 	width: 500px;
 	font-size: 20px;
 }
@@ -63,68 +74,6 @@
 	background-size: 400px 400px;
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-.years{
-	display: flex;
-	flex-direction: column;
-	height: 300px;
-	justify-content: space-between;
-	font-size: 20px;
-
-}
-
-.year{
-	margin-bottom: 0px;
-}
-
-.skills{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	justify-content: space-around;
-}
-
-.skills div{
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-.skillList{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.skillList p {
-	margin:0px;
-}
-
-.html{
-	border:1px solid grey;
-	border-radius: 5px;
-	background-color: grey;
-	height:200px;
-	margin:0px;
-	width: 30px;
-}
-
-.reactSkill{
-	border:1px solid grey;
-	border-radius: 5px;
-	background-color: grey;
-	height:90px;
-	margin:0px;
-	width: 30px;
-}
-
-.word{
-	border:1px solid grey;
-	border-radius: 5px;
-	background-color: grey;
-	height:50px;
-	margin:0px;
-	width: 30px;
 }
 
 .gitAni1{
@@ -213,4 +162,19 @@
 .upDown2{
 	animation-name: upDown2;
 	animation-duration: 5s;
+}
+
+.ironyard{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	padding-bottom: 50px;
+}
+
+
+.iron{
+	width: 800px;
 }

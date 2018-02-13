@@ -222,3 +222,57 @@ header button{
 	-webkit-text-stroke: 1.0px #000000;
 	-webkit-text-fill-color: #FFFFFF;
 }
+
+#sect-three{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: lightblue;
+	height: 400px;
+	text-align: center;
+}
+
+.contact-me{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contact-me div{
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+
+#sect-three h1{
+	font-size: 40px;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.email-me{
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 15px;
+	width: 100px;
+	transition: all 2s;
+}
+
+.email-me:hover{
+	border: 1px solid white;
+	padding: 20px;
+	border-radius: 15px;
+	width: 100px;
+	color: white;
+	transition: all 2s;
+}
