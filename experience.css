@@ -12,7 +12,11 @@
 }
 
 .git-repo h2{
-	width: 1000px !important;
+	width: 100% !important;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	background-color: lightgrey;
 }
 
 .git-examples{
@@ -57,10 +61,35 @@
 	/*height: 600px;*/
 }
 
+.more-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .splur{
 	width: 500px;
 	font-size: 20px;
+	padding-bottom: 50px;
 }
+
+.more-info a {
+	color: grey;
+	padding-top: 20px;
+}
+.splur a :visited{
+	color: grey;
+	padding-top: 20px;
+}
+.splur a :hover{
+	color: grey;
+	padding-top: 20px;
+}
+.splur a :focus{
+	color: grey;
+	padding-top: 20px;
+}
+
 
 .React-tac-toe{
 	background-image: url("./images/React-tac-toe.png");
@@ -171,10 +200,10 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	padding-bottom: 50px;
+	font-size: 20px;
 }
 
 
 .iron{
-	width: 800px;
+	width: 1000px;
 }

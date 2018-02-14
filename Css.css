@@ -1,5 +1,5 @@
 html{
-	color: grey;
+	color: black;
 }
 
 body{
@@ -83,14 +83,14 @@ header button{
 /*1900*/
 
 .back1{
-	background:url("./images/black-blue-man.jpg");
+	background:url("./images/web-dev1.png");
 	background-repeat: no-repeat;
     background-position: center;
     background-size: 1440px 1200px;
 }
 
 .back2{
-	background:url("./images/library.jpg");
+	background:url("./images/web-dev2.jpg");
 	background-repeat: no-repeat;
     background-position: center;
     background-size: 1440px 1200px;
@@ -229,7 +229,7 @@ header button{
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	background-color: lightblue;
+	background-color: lightgrey;
 	height: 400px;
 	text-align: center;
 }
@@ -238,6 +238,7 @@ header button{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	color: black;
 }
 
 .contact-me div{
@@ -265,7 +266,7 @@ header button{
 	padding: 20px;
 	border-radius: 15px;
 	width: 100px;
-	transition: all 2s;
+	transition: all .5s;
 }
 
 .email-me:hover{
@@ -274,5 +275,5 @@ header button{
 	border-radius: 15px;
 	width: 100px;
 	color: white;
-	transition: all 2s;
+	transition: all .5s;
 }

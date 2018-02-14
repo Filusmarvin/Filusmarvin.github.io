@@ -132,7 +132,7 @@ $(document).ready(setInterval(function () {
 		num = 1;
 		break;
 	}
-},4000))
+},7000))
 
 // Array and function for random photo
 
@@ -161,5 +161,12 @@ function photo(data) {
 	$('.random').attr('src',`${photo}`)
 
 }
+
+$( "#target" ).mousemove(function( event ) {
+  var msg = "Handler for .mousemove() called at ";
+  msg += event.pageX + ", " + event.pageY;
+  console.log(msg)
+  // $( "#log" ).append( "<div>" + msg + "</div>" );
+});
 
 
