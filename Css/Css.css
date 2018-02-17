@@ -39,6 +39,12 @@ a{
 	animation-duration: 3s;
 }
 
+.all{
+	position: relative;
+	animation-name: main;
+	animation-duration: 3s;
+}
+
 #header{
 	display: flex;
 	flex-direction: row;
@@ -191,7 +197,7 @@ a{
 .sect-one-right{
 	display: flex;
 	align-items: center;
-	background-image: url(./images/wedding.JPG);
+	background-image: url(../images/wedding.jpg);
 	background-repeat: no-repeat;
 	overflow-y: hidden;
 	height: 800px;

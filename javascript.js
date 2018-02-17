@@ -53,7 +53,7 @@ $(window).scroll(function () {
 // SetTime out function for the animation in section two left side List...
 
 $(window).scroll(function () {
-	if(window.pageYOffset>700){
+	if(window.pageYOffset>0){
     	// console.log(pageYOffset)
     	$(document).ready(setTimeout(function(){
 			$('.dev').show();	
@@ -76,7 +76,7 @@ $(window).scroll(function () {
 // Background color for the header after certain scroll amount
 
 $(window).scroll(function () {
-	if (pageYOffset>1150) {
+	if (pageYOffset>550) {
 		$('.nav-header').css("background","linear-gradient(to right, #434343, #2c3e50)");
 	} else {
 		$('.nav-header').css('background','none');
@@ -84,15 +84,15 @@ $(window).scroll(function () {
 })
 // animation for the experience section
 $(window).scroll(function () {
-	if (pageYOffset>1200) {
+	if (pageYOffset>800) {
 		$('.repo-img-uno').show();
 		$('.repo-img-uno').addClass('gitAni1');
 	} 
-	if (pageYOffset>1900) {
+	if (pageYOffset>1200) {
 		$('.repo-img-dos').show();
 		$('.repo-img-dos').addClass('gitAni2');
 	}
-	if (pageYOffset< 800) {
+	if (pageYOffset< 400) {
 		$('.repo-img-uno').hide();
 		$('.repo-img-dos').hide();
 	}
