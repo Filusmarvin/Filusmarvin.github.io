@@ -1,5 +1,5 @@
 html{
-	color: white;
+	color: black;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background: linear-gradient(to right, #870000, #190a05);
 }
@@ -238,11 +238,11 @@ a{
 }
 
 #sect-two{
-	/*background: linear-gradient(to right, #434343, #2c3e50);*/
+	background: linear-gradient(to right, #870000, #190a05)!important;
 }
 
 #experience{
-	padding-top: 0px;
+	padding-top: 30px;
 	margin-top: 0px;
 	text-align: center;
 	font-size: 30px;
@@ -257,7 +257,7 @@ a{
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	background-color: lightgrey;
+	background: linear-gradient( to right, #000428 , #004e92);
 	height: 400px;
 	text-align: center;
 }

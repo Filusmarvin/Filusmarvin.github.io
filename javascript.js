@@ -52,8 +52,8 @@ $(window).scroll(function () {
 
 // SetTime out function for the animation in section two left side List...
 
-$(window).scroll(function () {
-	if(window.pageYOffset>0){
+$(window).ready(setTimeout(
+	function () {
     	// console.log(pageYOffset)
     	$(document).ready(setTimeout(function(){
 			$('.dev').show();	
@@ -70,8 +70,7 @@ $(window).scroll(function () {
 			
 			$('.future').show();	
 		},4000));
-    }
-})
+}, 11000))
 
 // Background color for the header after certain scroll amount
 
