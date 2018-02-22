@@ -1,15 +1,15 @@
-$('.wid').hide();
+// $('.wid').hide();
 // // There until I can fix the main
-// $('.opening').hide();
+$('.opening').hide();
 
 
-$(document).ready(setTimeout(function(){
-	$('.begin').hide();
-	$('.wid').show();
-}, 5000));
+// $(document).ready(setTimeout(function(){
+// 	$('.begin').hide();
+// 	$('.wid').show();
+// }, 5000));
 
-$(document).ready(setTimeout(function(){
-	$('.opening').hide();
-	$('.main').show();
-}, 10000));
+// $(document).ready(setTimeout(function(){
+// 	$('.opening').hide();
+// 	$('.main').show();
+// }, 10000));
 

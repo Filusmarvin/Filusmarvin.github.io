@@ -3,6 +3,19 @@
 // }
 // window.onscroll=testScroll
 
+
+$('.nav').on('click',function (event) {
+	let id = event.target.id;
+	if( id === "work"){
+
+	} else if (id === 'contact') {
+
+	} else if (id === 'about') {
+
+	}
+
+})
+
 $(window).scroll(function(){
 
 })
@@ -75,10 +88,10 @@ $(window).ready(setTimeout(
 // Background color for the header after certain scroll amount
 
 $(window).scroll(function () {
-	if (pageYOffset>550) {
-		$('.nav-header').css("background","linear-gradient(to right, #434343, #2c3e50)");
+	if (pageYOffset>50) {
+		$('#header').css("background","linear-gradient(to right, #eef2f3 , #004e92)");
 	} else {
-		$('.nav-header').css('background','none');
+		$('#header').css('background','none');
 	}
 })
 // animation for the experience section
