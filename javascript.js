@@ -96,11 +96,12 @@ $(window).scroll(function () {
 })
 // animation for the experience section
 $(window).scroll(function () {
-	if (pageYOffset>800) {
+	console.log(pageYOffset)
+	if (pageYOffset>500) {
 		$('.repo-img-uno').show();
 		$('.repo-img-uno').addClass('gitAni1');
 	} 
-	if (pageYOffset>1200) {
+	if (pageYOffset>1160) {
 		$('.repo-img-dos').show();
 		$('.repo-img-dos').addClass('gitAni2');
 	}
@@ -110,11 +111,16 @@ $(window).scroll(function () {
 	}
 
 	//animation for the skills bars
-	if (pageYOffset> 2075) {
-		$('.skill1').addClass('upDown1');
-		$('.skill2').addClass('upDown2');
-	}
-})
+	// if (pageYOffset> 2075) {
+	// 	$('.skill1').addClass('upDown1');
+	// 	$('.skill2').addClass('upDown2');
+	// }
+});
+
+// $('.').on('click',function(){
+// 	window.scrollBy(763);
+// 	alert()
+// })
 
 
 
@@ -179,6 +185,16 @@ $( "#target" ).mousemove(function( event ) {
   msg += event.pageX + ", " + event.pageY;
   console.log(msg)
   // $( "#log" ).append( "<div>" + msg + "</div>" );
+});
+
+
+$(document).ready(function() {
+  $("#work").on("click", function( e ) {
+
+    e.preventDefault();
+
+    $("body, html").scrollTop($( $(this).attr('href') ).offset().top );
+  });
 });
 
 

@@ -1,7 +1,7 @@
 html{
 	color: white;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: linear-gradient(to right, #eef2f3 , white);
+	/*background: linear-gradient(to right, #eef2f3 , white);*/
 }
 
 body{
@@ -35,7 +35,7 @@ a{
 }
 
 .main{
-	/*display: none;*/
+	display: none;
 	position: relative;
 	animation-name: main;
 	animation-duration: 3s;
@@ -151,6 +151,23 @@ a{
 	flex-direction: row; 
 	justify-content: space-around;
 	width: 300px;
+	color: black;
+}
+
+.nav a{
+	color: black;
+}
+
+.nav a:hover{
+	color: black;
+}
+.nav a:focus{
+	color: black;
+}
+.nav a:visited{
+	color: black;
+}
+.nav a{
 	color: black;
 }
 
