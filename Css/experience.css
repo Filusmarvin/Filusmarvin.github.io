@@ -13,9 +13,9 @@
 
 .git-repo h2{
 	width: 100% !important;
-	padding-top: 50px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+	font-size: 30px;
 }
 
 .git-examples{
@@ -74,19 +74,19 @@
 }
 
 .more-info a {
-	color: grey;
+	color: white;
 	padding-top: 20px;
 }
 .splur a :visited{
-	color: grey;
+	color: white;
 	padding-top: 20px;
 }
 .splur a :hover{
-	color: grey;
+	color: white;
 	padding-top: 20px;
 }
 .splur a :focus{
-	color: grey;
+	color: white;
 	padding-top: 20px;
 }
 

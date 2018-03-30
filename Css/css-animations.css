@@ -350,3 +350,21 @@
 		transform: translateX(0px);	
 	}
 }
+
+@keyframes mainSlide {
+	0%{
+		transform: translateX(-1440px);	
+	}
+	100%{
+		transform: translateX(0px);	
+	}
+}
+
+@keyframes contact {
+	0%{
+		transform: translateX(1440px);	
+	}
+	100%{
+		transform: translateX(0px);	
+	}
+}

@@ -154,47 +154,68 @@ $(document).ready(setInterval(function () {
 
 // Array and function for random photo
 
-$(window).ready(function(){
-	var arr = [];
-	while(arr.length < 4){
-	    var randomnumber = Math.floor(Math.random()*100) + 1;
-	    if(arr.indexOf(randomnumber) > -1) continue;
-	    arr[arr.length] = randomnumber;
-	}
-	// console.log(arr);
-	let num1 = arr[0];
-	let num2 = arr[1];
-	// let num3 = arr[2];
+// $(window).ready(function(){
+// 	var arr = [];
+// 	while(arr.length < 4){
+// 	    var randomnumber = Math.floor(Math.random()*100) + 1;
+// 	    if(arr.indexOf(randomnumber) > -1) continue;
+// 	    arr[arr.length] = randomnumber;
+// 	}
+// 	// console.log(arr);
+// 	let num1 = arr[0];
+// 	let num2 = arr[1];
+// 	// let num3 = arr[2];
 
-	let a = "" + num1 + num2;
-	console.log(a)
-	let key ="7955846-4dce5a3ca0059f6d2d4d8a9e3";
-	return fetch(`https://pixabay.com/api/?key=${key}&id=${a}`)
-	.then(response => response.json()).then(photo);
-})
+// 	let a = "" + num1 + num2;
+// 	console.log(a)
+// 	let key ="7955846-4dce5a3ca0059f6d2d4d8a9e3";
+// 	return fetch(`https://pixabay.com/api/?key=${key}&id=${a}`)
+// 	.then(response => response.json()).then(photo);
+// })
 
-function photo(data) {
-	let photo = data;
-	console.log(photo);
-	$('.random').attr('src',`${photo}`)
+// function photo(data) {
+// 	let photo = data;
+// 	console.log(photo);
+// 	$('.random').attr('src',`${photo}`)
 
-}
+// }
 
-$( "#target" ).mousemove(function( event ) {
+$( "#contact-me" ).mousemove(function( event ) {
   var msg = "Handler for .mousemove() called at ";
-  msg += event.pageX + ", " + event.pageY;
-  console.log(msg)
-  // $( "#log" ).append( "<div>" + msg + "</div>" );
+  let x = event.pageX;
+  let y = event.pageY;
+  msg += x + ", " + y;
+  // console.log(msg)
+  if (x >= 0 && x <= 340 && y >= 0 && y <= 215) {
+  	console.log("top left");
+  } else if(x >= 0 && x <= 340 && y >= 216 && y <= 480){
+  	console.log('middle left');
+  } else if (x >= 0 && x <= 340 && y >= 481){
+  	console.log('bottom left');
+  } else if (x >= 341 && x <= 635 && y >= 0 && y <= 215){
+  	console.log('top middle');
+  } else if (x >= 636 && x <= 1000 && y >= 0 && y <= 215){
+  	console.log('top right');
+  } else if (x >= 341 && x <= 635 && y >= 216 && y <= 480){
+  	console.log('middle middle');
+  } else if (x >= 341 && x <= 635 && y >= 481) {
+  	console.log('middle bottom');
+  } else if (x >= 636 && x <= 1000 && y >= 216 && y <= 480) {
+  	console.log('middle right');
+  } else if (x >= 636 && x <= 1000 && y >= 481){
+  	console.log('bottom right');
+  }
 });
 
 
-$(document).ready(function() {
-  $("#work").on("click", function( e ) {
+// $('#work').click(function (event) {
+//   event.preventDefault();
+//   $('#experience').scrollView();
+// });
 
-    e.preventDefault();
 
-    $("body, html").scrollTop($( $(this).attr('href') ).offset().top );
-  });
-});
+$('#work').on('click',function(event){
+	$('.main').show();
+})
 
 
