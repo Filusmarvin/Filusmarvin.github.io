@@ -238,7 +238,7 @@ a{
 .sect-one-right{
 	display: flex;
 	align-items: center;
-	background-image: url(../images/wedding.jpg);
+	background-image: url(../images/wedding.png);
 	background-repeat: no-repeat;
 	overflow-y: hidden;
 	height: 800px;
