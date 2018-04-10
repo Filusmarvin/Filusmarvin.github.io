@@ -46,3 +46,5 @@ $('#main').on('click',function(event){
 	hideContact()
 })
 
+$('#work').on('click', function(){ $('#contact-me').hide()})
+
