@@ -3,7 +3,6 @@
 // }
 // window.onscroll=testScroll
 
-
 $('.nav').on('click',function (event) {
 	let id = event.target.id;
 	if( id === "work"){
@@ -87,16 +86,26 @@ $(window).ready(setTimeout(
 
 // Background color for the header after certain scroll amount
 
+let count = 1;
+$('#main').on('click',function(){count = 1 });
+$('#work').on('click',function(){count = 1 });
+$('#contact').on('click',function(){count = 2 });
+
 $(window).scroll(function () {
-	if (pageYOffset>50) {
+	if (pageYOffset>50 && count === 1 ) {
 		$('#header').css("background","linear-gradient(to right, #eef2f3 , #004e92)");
-	} else {
+		console.log(count);
+	} else if (pageYOffset>50 && count === 2) {
+		$('#header').css("background","linear-gradient(to right, #232526, #414345)");
+		console.log(count)
+	}
+	 else {
 		$('#header').css('background','none');
 	}
 })
 // animation for the experience section
 $(window).scroll(function () {
-	console.log(pageYOffset)
+	// console.log(pageYOffset)
 	if (pageYOffset>500) {
 		$('.repo-img-uno').show();
 		$('.repo-img-uno').addClass('gitAni1');

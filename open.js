@@ -17,6 +17,7 @@ $(document).ready(setTimeout(function(){
 // This is to make the Contact slide in 
 $('#contact').on('click',function (event) {
 	event.preventDefault();
+	// $('.')
 	$(window).scrollTop(0);
 	$('.main').css('z-index',' 1 ');
 	$('#contact-me').css('z-index','2');
