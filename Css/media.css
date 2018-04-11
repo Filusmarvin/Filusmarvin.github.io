@@ -1,0 +1,6 @@
+@media only screen and (device-width: 400px) {
+	.git-examples{
+		display:flex;
+		flex-direction: column;
+	}
+}

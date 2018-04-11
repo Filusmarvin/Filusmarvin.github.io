@@ -94,10 +94,8 @@ $('#contact').on('click',function(){count = 2 });
 $(window).scroll(function () {
 	if (pageYOffset>50 && count === 1 ) {
 		$('#header').css("background","linear-gradient(to right, #eef2f3 , #004e92)");
-		console.log(count);
 	} else if (pageYOffset>50 && count === 2) {
 		$('#header').css("background","linear-gradient(to right, #232526, #414345)");
-		console.log(count)
 	}
 	 else {
 		$('#header').css('background','none');
@@ -189,32 +187,33 @@ $(document).ready(setInterval(function () {
 
 // }
 
-$( "#contact-me" ).mousemove(function( event ) {
-  var msg = "Handler for .mousemove() called at ";
-  let x = event.pageX;
-  let y = event.pageY;
-  msg += x + ", " + y;
-  // console.log(msg)
-  if (x >= 0 && x <= 340 && y >= 0 && y <= 215) {
-  	console.log("top left");
-  } else if(x >= 0 && x <= 340 && y >= 216 && y <= 480){
-  	console.log('middle left');
-  } else if (x >= 0 && x <= 340 && y >= 481){
-  	console.log('bottom left');
-  } else if (x >= 341 && x <= 635 && y >= 0 && y <= 215){
-  	console.log('top middle');
-  } else if (x >= 636 && x <= 1000 && y >= 0 && y <= 215){
-  	console.log('top right');
-  } else if (x >= 341 && x <= 635 && y >= 216 && y <= 480){
-  	console.log('middle middle');
-  } else if (x >= 341 && x <= 635 && y >= 481) {
-  	console.log('middle bottom');
-  } else if (x >= 636 && x <= 1000 && y >= 216 && y <= 480) {
-  	console.log('middle right');
-  } else if (x >= 636 && x <= 1000 && y >= 481){
-  	console.log('bottom right');
-  }
-});
+// $( "#contact-me" ).mousemove(function( event ) {
+//   var msg = "Handler for .mousemove() called at ";
+//   let x = event.pageX;
+//   let y = event.pageY;
+//   msg += x + ", " + y;
+//   // console.log(msg)
+//   if (x >= 0 && x <= 340 && y >= 0 && y <= 215) {
+//   	console.log("top left");
+//   	$()
+//   } else if(x >= 0 && x <= 340 && y >= 216 && y <= 480){
+//   	console.log('middle left');
+//   } else if (x >= 0 && x <= 340 && y >= 481){
+//   	console.log('bottom left');
+//   } else if (x >= 341 && x <= 635 && y >= 0 && y <= 215){
+//   	console.log('top middle');
+//   } else if (x >= 636 && x <= 1000 && y >= 0 && y <= 215){
+//   	console.log('top right');
+//   } else if (x >= 341 && x <= 635 && y >= 216 && y <= 480){
+//   	console.log('middle middle');
+//   } else if (x >= 341 && x <= 635 && y >= 481) {
+//   	console.log('middle bottom');
+//   } else if (x >= 636 && x <= 1000 && y >= 216 && y <= 480) {
+//   	console.log('middle right');
+//   } else if (x >= 636 && x <= 1000 && y >= 481){
+//   	console.log('bottom right');
+//   }
+// });
 
 
 // $('#work').click(function (event) {
@@ -226,5 +225,3 @@ $( "#contact-me" ).mousemove(function( event ) {
 $('#work').on('click',function(event){
 	$('.main').show();
 })
-
-

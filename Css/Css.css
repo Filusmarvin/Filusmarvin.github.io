@@ -38,18 +38,18 @@ a{
 	display: none;
 	position: relative;
 	animation-name: main;
-	animation-duration: 3s;
+	animation-duration: 2s;
 }
 
 .mainSlide{
 	animation-name: mainSlide;
-	animation-duration: 3s;
+	animation-duration: 2s;
 }
 
 .all{
 	position: relative;
 	animation-name: main;
-	animation-duration: 3s;
+	animation-duration: 2s;
 }
 
 #header{
@@ -130,21 +130,18 @@ a{
     background-position: center;
     background-size: 1440px 1200px;
 }
-
 .back2{
 	background:url("../images/web-dev2.jpg");
 	background-repeat: no-repeat;
     background-position: center;
     background-size: 1440px 1200px;
 }
-
 .back3{
 	background:url("../images/ocean-sunset.jpg");
 	background-repeat: no-repeat;
     background-position: center;
     background-size: 1440px 1200px;
 }
-
 .back4{
 	background:url("../images/Apple-Camera.jpg");
 	background-repeat: no-repeat;
@@ -156,8 +153,83 @@ a{
 	display: flex;
 	flex-direction: row; 
 	justify-content: space-around;
+	text-align: center;
+	align-items: center;
 	width: 500px;
 	color: black;
+	transition: all 2s ease;
+	height: 100%;
+}
+
+.nav .menu-ani{
+	position:relative;
+	display: none;
+	/*top:400px;
+	left:200px;*/
+}
+
+.nav:hover > .menu-ani {
+	position: relative;
+	display: unset;
+}
+
+.nav:hover > .menu-uno{
+	animation-name: menu-uno;
+	animation-duration: 2s;
+}
+
+.nav:hover > .menu-dos{
+	animation-name: menu-dos;
+	animation-duration: 3s;
+}
+
+.nav:hover > .menu-tres{
+	animation-name: menu-tres;
+	animation-duration: 4s;
+}
+
+.nav:hover > .menu {
+	opacity:0;
+}
+
+.menu{
+	opacity: 1;
+}
+
+@keyframes menu-uno {
+	0%{
+		opacity:0;
+		top:300px;
+	}
+
+	100%{
+		opacity: 1;
+		top:0px;
+	}
+}
+
+@keyframes menu-dos {
+	0%{
+		opacity:0;
+		top:300px;
+	}
+
+	100%{
+		opacity: 1;
+		top:0px;
+	}
+}
+
+@keyframes menu-tres {
+	0%{
+		opacity:0;
+		top:300px;
+	}
+
+	100%{
+		opacity: 1;
+		top:0px;
+	}
 }
 
 .nav a{
@@ -345,4 +417,3 @@ a{
 	color: white;
 	transition: all .5s;
 }
-

@@ -1,18 +1,18 @@
-$('.wid').hide();
+// $('.wid').hide();
 $('#contact-me').hide();
 // There until I can fix the main
-// $('.opening').hide();
+$('.opening').hide();
 
 
-$(document).ready(setTimeout(function(){
-	$('.begin').hide();
-	$('.wid').show();
-}, 5000));
+// $(document).ready(setTimeout(function(){
+// 	$('.begin').hide();
+// 	$('.wid').show();
+// }, 5000));
 
-$(document).ready(setTimeout(function(){
+// $(document).ready(setTimeout(function(){
 	$('.opening').hide();
 	$('.main').show();
-}, 10000));
+// }, 10000));
 
 // This is to make the Contact slide in 
 $('#contact').on('click',function (event) {
@@ -28,13 +28,13 @@ $('#contact').on('click',function (event) {
 function hideMain(){
 	$('#contact').on('click',setTimeout(function (event) {
 		$('.main').hide();
-	},3000))
+	},2000))
 }
 
 function hideContact(){
 	$('#contact').on('click',setTimeout(function (event) {
 		$('#contact-me').hide();
-	},3000))
+	},2000))
 }
 
 $('#main').on('click',function(event){
@@ -47,4 +47,3 @@ $('#main').on('click',function(event){
 })
 
 $('#work').on('click', function(){ $('#contact-me').hide()})
-
