@@ -89,7 +89,7 @@ $('#contact').on('click',function(){count = 2 });
 
 $(window).scroll(function () {
 	if (pageYOffset>900 && count === 1 ) {
-		$('.home').css("background", " grey ");
+		$('.home').css("background-image", "linear-gradient(to right, #243949 0%, #517fa4 100%)");
 	} else if (pageYOffset>900 && count === 2) {
 		$('.home').css("background","linear-gradient(to right, #232526, #414345)");
 	}

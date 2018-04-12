@@ -3,7 +3,7 @@
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	/*background: url(../images/blueback.png);*/
 	/*background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);*/
-	background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+	background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
 
 body{
@@ -139,7 +139,7 @@ a:active{
 
 .nav:hover{
 	animation: border 3s ease;
-	border: 1px solid white;
+	border: 1px solid `white;
 }
 
 @keyframes border{ 0%{border:1px solid white;opacity: 0} 100%{border:1px solid white;opacity: 1} }
