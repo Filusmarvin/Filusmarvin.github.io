@@ -15,9 +15,6 @@ $('.nav').on('click',function (event) {
 
 })
 
-$(window).scroll(function(){
-
-})
 $('.dev').hide();
 $('.school').hide();
 $('.camp').hide();
@@ -29,38 +26,38 @@ var lastScrollTop = 0;
 var scrollDirection;
 
 // Listen for scroll events
-$(window).scroll(function () {
+// $(window).scroll(function () {
 
-	// direction of scroll
-	   var st = $(this).scrollTop();
-	   if (st > lastScrollTop){
-	      // downscroll code
-	      scrollDirection = "down"
-	      // console.log(scrollDirection);
-	   } else {
-	      // upscroll code
-	      scrollDirection = "up"
-	      // console.log(scrollDirection);
-	   }
-	   lastScrollTop = st;
+// 	// direction of scroll
+// 	   var st = $(this).scrollTop();
+// 	   if (st > lastScrollTop){
+// 	      // downscroll code
+// 	      scrollDirection = "down"
+// 	      // console.log(scrollDirection);
+// 	   } else {
+// 	      // upscroll code
+// 	      scrollDirection = "up"
+// 	      // console.log(scrollDirection);
+// 	   }
+// 	   lastScrollTop = st;
 
-	// Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
+// 	// Clear our timeout throughout the scroll
+// 	window.clearTimeout( isScrolling );
 
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
+// 	// Set a timeout to run after scrolling ends
+// 	isScrolling = setTimeout(function() {
 
-		// Run the callback
-		// console.log( 'Scrolling has stopped.' );
-		// if(scrollDirection === "up"){
-		// 	console.log("the direction is up");
-		// } else if (scrollDirection === "down") {
-		// 	console.log("this scroll direction is down")
-		// }
+// 		// Run the callback
+// 		// console.log( 'Scrolling has stopped.' );
+// 		// if(scrollDirection === "up"){
+// 		// 	console.log("the direction is up");
+// 		// } else if (scrollDirection === "down") {
+// 		// 	console.log("this scroll direction is down")
+// 		// }
 
-	}, 50);
+// 	}, 50);
 
-}, null);
+// }, null);
 
 // SetTime out function for the animation in section two left side List...
 
@@ -93,7 +90,7 @@ $('#contact').on('click',function(){count = 2 });
 
 $(window).scroll(function () {
 	if (pageYOffset>50 && count === 1 ) {
-		$('#header').css("background","linear-gradient(to right, #eef2f3 , #004e92)");
+		$('#header').css("background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; background-blend-mode: multiply,multiply;");
 	} else if (pageYOffset>50 && count === 2) {
 		$('#header').css("background","linear-gradient(to right, #232526, #414345)");
 	}
@@ -124,40 +121,30 @@ $(window).scroll(function () {
 	// }
 });
 
-// $('.').on('click',function(){
-// 	window.scrollBy(763);
-// 	alert()
-// })
+// var num = 1;
 
+// $(document).ready(setInterval(function () {
+// 	// console.log(num)
 
-
-
-
-
-var num = 1;
-
-$(document).ready(setInterval(function () {
-	// console.log(num)
-
-	switch(num){
-	case 1:
-		$('.back1').attr('class','back2');
-		num++;
-		break;
-	case 2:
-		$('.back2').attr('class','back3');
-		num++;
-		break;
-	case 3:
-		$('.back3').attr('class','back4');
-		num++;
-		break;
-	case 4:
-		$('.back4').attr('class','back1');
-		num = 1;
-		break;
-	}
-},7000))
+// 	switch(num){
+// 	case 1:
+// 		$('.back1').attr('class','back2');
+// 		num++;
+// 		break;
+// 	case 2:
+// 		$('.back2').attr('class','back3');
+// 		num++;
+// 		break;
+// 	case 3:
+// 		$('.back3').attr('class','back4');
+// 		num++;
+// 		break;
+// 	case 4:
+// 		$('.back4').attr('class','back1');
+// 		num = 1;
+// 		break;
+// 	}
+// },7000))
 
 // Array and function for random photo
 
@@ -213,12 +200,6 @@ $(document).ready(setInterval(function () {
 //   } else if (x >= 636 && x <= 1000 && y >= 481){
 //   	console.log('bottom right');
 //   }
-// });
-
-
-// $('#work').click(function (event) {
-//   event.preventDefault();
-//   $('#experience').scrollView();
 // });
 
 

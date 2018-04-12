@@ -10,7 +10,7 @@ $('.opening').hide();
 // }, 5000));
 
 // $(document).ready(setTimeout(function(){
-	$('.opening').hide();
+// 	$('.opening').hide();
 	$('.main').show();
 // }, 10000));
 
