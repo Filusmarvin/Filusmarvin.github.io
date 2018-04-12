@@ -14,15 +14,14 @@
 	width: 100%;
 	height: 900px;
 	position: fixed;
-	top:10%;
+	/*top:10%;*/
 	background: url(../images/mountain.png);
 	background-size: cover;
 	font-size: 40px;
 }
 
-#banner h2 {
-	padding-top: 0px;
-	margin-top: 0px;
+#banner h1 {
+	font-size: 100px;
 }
 
 #content{
