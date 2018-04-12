@@ -42,7 +42,7 @@ a:active{
 }
 
 .main{
-	display: none;
+	/*display: none;*/
 	position: relative;
 	animation-name: main;
 	animation-duration: 2s;
