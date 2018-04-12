@@ -12,7 +12,6 @@ $('.nav').on('click',function (event) {
 	} else if (id === 'about') {
 
 	}
-
 })
 
 $('.dev').hide();
@@ -89,13 +88,13 @@ $('#work').on('click',function(){count = 1 });
 $('#contact').on('click',function(){count = 2 });
 
 $(window).scroll(function () {
-	if (pageYOffset>50 && count === 1 ) {
-		$('#header').css("background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; background-blend-mode: multiply,multiply;");
-	} else if (pageYOffset>50 && count === 2) {
-		$('#header').css("background","linear-gradient(to right, #232526, #414345)");
+	if (pageYOffset>900 && count === 1 ) {
+		$('.home').css("background", " grey ");
+	} else if (pageYOffset>900 && count === 2) {
+		$('.home').css("background","linear-gradient(to right, #232526, #414345)");
 	}
 	 else {
-		$('#header').css('background','none');
+		$('.home').css('background','none');
 	}
 })
 // animation for the experience section
